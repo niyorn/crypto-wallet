@@ -16,3 +16,24 @@
     padding: 0;
     margin: 0;
 }
+
+.container{
+    display: grid;
+    grid-template-areas: 
+                        'nav'
+                        'portfolio';
+    grid-template-rows: 5em minmax(auto, 1fr);
+}
+
+header{
+    grid-area: nav;
+    background-color: red;
+}
+
+.homepage main{
+    grid-area: portfolio;
+    grid-template: 
+                    'investment'
+                    'coins';
+}
+
