@@ -96,3 +96,24 @@ nav ul a{
 .add{
     grid-area: addCoin;
 }
+
+.investment-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.investment-container .description{
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.investment-container .belance{
+    font-size: 20vw;
+    font-weight: 800;
+}
+
+.investment-container .change{
+    font-size: 2.7em;
+}
