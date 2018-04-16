@@ -68,3 +68,31 @@ nav ul a{
     padding: 1rem;
     text-decoration: none;
 }
+
+/**************************
+    Main
+***************************/
+
+.coins-menu{
+    display: grid;
+    grid-template-areas: 'filter addCoin';
+    grid-template-columns: 1fr minmax(min-content, max-content);
+}
+
+.filter{
+    grid-area: filter;
+}
+
+.filter ul{
+    list-style: none;
+    display: flex;
+}
+
+.filter button{
+    border: none;
+    margin-right: 1rem;
+}
+
+.add{
+    grid-area: addCoin;
+}

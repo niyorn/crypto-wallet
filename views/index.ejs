@@ -3,8 +3,40 @@
     <header>
         <%-include partials/nav.ejs %>
     </header>
-    <main>
 
+    <main>
+        <section class="investment-container">
+            <h1 class="desription">
+                Portfolio belance
+            </h1>
+
+            <p class="belance">
+                <span class="valuta-sign">$</span>
+                <span class="total" >1000</span>
+            </p>
+
+            <p class="change 24-hour">
+                <span class="change-status">+</span>
+                <span class="change-total">3.7%</span>
+            </p>
+
+        </section>
+        <section class="coins-container">
+            <section class="coins-menu">
+                <section class="filter">
+                    <ul>
+                        <li><button>Change</button></li>
+                        <li><button>A ></button></li>
+                        <li><button>Date</button></li>
+                    </ul>
+                </section>
+
+                <section class="add">
+                    <button>Add +</button>
+                </section>
+            </section>
+
+        </section>
     </main>
 </div>
 <%- include partials/tail.ejs %>
