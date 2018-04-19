@@ -1,0 +1,118 @@
+:root{
+    --backround-color:#233eda;
+    --primary-color: #84FFFF;
+
+    --material-shaduw-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --material-shaduw-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --material-shaduw-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --material-shaduw-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --material-shaduw-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+    --transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+                        'nav'
+                        'portfolio';
+    grid-template-rows: 5em minmax(auto, 1fr);
+}
+
+header{
+    grid-area: nav;
+    color: black;
+}
+
+.homepage main{
+    grid-area: portfolio;
+    grid-template: 
+                    'investment'
+                    'coins';
+}
+
+/********************
+Navigation
+*********************/
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav ul a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/**************************
+    Main
+***************************/
+
+.coins-menu{
+    display: grid;
+    grid-template-areas: 'filter addCoin';
+    grid-template-columns: 1fr minmax(min-content, max-content);
+}
+
+.filter{
+    grid-area: filter;
+}
+
+.filter ul{
+    list-style: none;
+    display: flex;
+}
+
+.filter button{
+    border: none;
+    margin-right: 1rem;
+}
+
+.add{
+    grid-area: addCoin;
+}
+
+.investment-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.investment-container .description{
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.investment-container .belance{
+    font-size: 20vw;
+    font-weight: 800;
+}
+
+.investment-container .change{
+    font-size: 2.7em;
+}
