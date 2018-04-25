@@ -116,10 +116,11 @@ nav ul a{
     grid-area: addCoin;
 }
 
-.add button{
+.add a{
     padding: 1rem 2rem;
     background-color: yellow;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .investment-container{
@@ -134,7 +135,7 @@ nav ul a{
 }
 @media (min-width: 50em){
     .investment-container{
-        min-height: 80vh;
+        min-height: 60vh;
     }
 }
 
@@ -262,4 +263,224 @@ nav ul a{
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
     grid-column-gap: 1.4rem;
     grid-row-gap: 1.4rem;
+}
+
+
+/************************
+    Zero state
+************************/
+
+.zero-state{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zero-state .add-coin{
+    height: 50%;
+    max-height: 20em;
+    width: 50%;
+    max-width: 20em;
+    padding: 2rem;
+}
+
+.zero-state .add-coin span:first-of-type{
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+}
+
+.zero-state .add-coin span:nth-of-type(2){
+    font-size: 1.4rem;
+}
+
+/************************************
+    Add coin
+************************************/
+
+.add-coin-1{
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-coin-1-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-coin-1-container p{
+    color: white;
+    font-size: 2vw;
+    max-width: 60vw;
+    text-align: center;
+}
+
+.add-coin-1-container a{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20em;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    text-decoration: none;
+    padding: 2rem;
+    transition: 0.7s;
+}
+
+.add-coin-1-container a:hover, .add-coin-1-container a:focus{
+    background-color: yellow;
+    transform: scale(1.04S);
+}
+
+.add-coin-1-container a span:first-of-type{
+    font-size: 7em;
+}
+
+.add-coin-2{
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-coin-2 .add-coin-2-container{
+    background-color: #fff;
+}
+
+.add-coin-2-container legend{
+    padding-top: 2rem;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.choose-coin-container{
+    display: flex;
+}
+
+.choose-coin-container div{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: solid 1px rgb(170, 170, 170);
+}
+
+.choose-coin-container input[type=radio]:checked ~label{
+    background-color: var(--background-color);
+    color: white;
+}
+
+.choose-coin-container input[type=radio]:focus ~label{
+    background-color: yellow;
+    color: black;
+}
+
+.choose-coin-container div label{
+    display: flex;
+    flex-direction: column;
+    padding: 1.7rem;
+}
+
+
+.choose-coin-container div label span{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+}
+
+.add-coin-2-container form fieldset{
+    border: none;
+    padding: 4rem;
+}
+
+.add-coin-2-container .submit-coin{
+    margin-top: 2rem;
+    border: solid 1px black;
+    padding: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    background-color: rgb(224, 224, 224);
+}
+
+.add-coin-2-container .submit-coin:hover, .add-coin-2-container .submit-coin:focus{
+    background-color: yellow;
+    color: black;
+}
+
+.add-coin-2-container .submit-amount{
+    margin-top: 2rem;
+    border: solid 1px black;
+    padding: 1rem;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    background-color: rgb(224, 224, 224);
+}
+
+.add-coin-2-container .submit-amount:hover, .add-coin-2-container .submit-amount:focus{
+    background-color: yellow;
+    color: black;
+}
+
+.add-coin-indicator li{
+    list-style: none;
+}
+
+.add-coin-indicator a{
+    color: white;
+    text-decoration: none;
+    margin-left: 0.7rem;
+}
+
+.add-coin-indicator a:focus span{
+    background-color: yellow;
+    color: black;
+}
+
+.add-coin-indicator a span{
+    display: inline-flex;
+    padding: 2rem;
+    border: solid 1px rgba(255, 255, 255, 0.068);
+}
+
+.add-coin-indicator .done span{
+    background-color: rgb(75, 136, 75);
+}
+
+.add-coin-indicator a span:first-of-type{
+    margin-bottom: 1rem;
+}
+
+.add-coin-indicator .active a span{
+    border: solid 1px white;
+}
+
+.add-coin-indicator .active a span:nth-of-type(1){
+    border: solid 1px black;
+    background-color: grey;
+}
+
+.add-coin-indicator .active a span:nth-of-type(2){
+    border: solid 1px black;
+    background-color: grey;
 }
