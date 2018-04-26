@@ -9,12 +9,10 @@ On top of that, we want to enhance the keyboard experience. Instead of using the
 ## User Scenarios
  *User scenarios help designers understand what motivates users when they interact with a design*
 
-### Investors
-An investor have invested in the cryptomarket. The investor wants an easy way to able to see the total worth of all of his assets and also the worth of the individuel assets. 
-
-### Programmer
-A programmer wants to see the total worth of his investment. Because he was programming all day, he doesn't wants to leave his hand from the keyboard. 
-
+### Servin
+Servin have invested in the cryptomarket. Servin wants an easy way to able to see the total worth of all of his assets and also the worth of the individuel assets.
+### Marijn
+Marijn have invested in the cryptomarket, and wants to see the total worth of his assets also. But because of a chronic disease he is unable to use the trackpad.
 ## Sorting & Filtering
 
 ### Sorting
@@ -32,34 +30,16 @@ A programmer wants to see the total worth of his investment. Because he was prog
 - Possession of assets
 
 ## Focus
-*For this project I want focus on the following points*
+*For this project I want focus on the following design priciples*
 
 
-- Clarity
 - One primary action per screen
-- Appearance folow behavior
-- Strong visual hierachries works best
+- Progressive disclosure
+- The zero state
+- Strong visual hierarchies works best
 
+## Insight
+*The site has been tested by Marijn. This is the insight that is gained after testing*
 
-## Install
-
-Get all dependendies
-```
-npm install
-```
-
-Start application.
-```
-npm start
-```
-
-Standard port is 4000
-```
-localhost:4000
-```
-
-
-### Feature
-- Node
-- EJS
-- Nodemon
+- Zero state should've given the user more options to start with. This way the user know what to do.
+- Progressive disclosure can be taken to far. If the task is not complex and if they're the same thing than it's better to have them on the same page.
